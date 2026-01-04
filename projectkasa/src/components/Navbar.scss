@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: #fff;
+}
+
+.navbar-logo {
+  // font-size: 1.5rem;
+  // font-weight: bold;
+}
+
+div img {
+  width: 200px;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+
+    .navbar-logo img {
+      width: 100px;
+    }
+
+    .navbar-links a {
+      margin-left: 15px;
+      font-size: 12px;
+    }
+  }
+}

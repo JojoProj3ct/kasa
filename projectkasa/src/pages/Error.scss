@@ -1,0 +1,26 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  color: #ff6060;
+}
+
+.error-code {
+  font-size: 10rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error-text {
+  font-size: 1.5rem;
+  margin: 20px 0 40px;
+}
+
+.error-link {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 1rem;
+}

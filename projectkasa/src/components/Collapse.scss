@@ -1,0 +1,41 @@
+.collapse {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.collapse-header {
+  width: 100%;
+  background: #ff6060;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  background: #f6f6f6;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .collapse-title {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .collapse-content {
+    font-size: 12px;
+  }
+}

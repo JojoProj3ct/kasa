@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: #fff;
+}
+
+div img {
+  width: 200px;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}/*# sourceMappingURL=Navbar.css.map */
