@@ -20,7 +20,7 @@ function Navbar() {
           to="/about"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          À propos
+          À Propos
         </NavLink>
       </div>
     </nav>
