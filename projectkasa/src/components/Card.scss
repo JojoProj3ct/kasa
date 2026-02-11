@@ -9,14 +9,29 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
 
+  border-radius: 10px;
+}
+.card::after {
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(10, 10, 10, 0.25) 41%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+}
 .card h2 {
   position: absolute;
   bottom: 15px;
   left: 15px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 2;
 }
 /* 📱 MOBILE */
 @media (max-width: 768px) {

@@ -1,128 +1,3 @@
-// .housing {
-//   width: 90%;
-//   margin: 20px auto;
-
-//   .housing-header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: flex-start;
-//     flex-wrap: wrap;
-//     margin: 20px 0;
-
-//     .housing-info {
-//       flex: 1;
-//       margin-right: 20px;
-
-//       .housing-title {
-//         font-size: 28px;
-//         font-weight: bold;
-//         margin-bottom: 5px;
-//       }
-
-//       .housing-location {
-//         font-size: 16px;
-//         color: #ff6060;
-//         margin-bottom: 10px;
-//       }
-
-//       .housing-tags {
-//         display: flex;
-//         gap: 10px;
-//         flex-wrap: wrap;
-
-//         .tag {
-//           background-color: #ff6060;
-//           color: white;
-//           padding: 5px 10px;
-//           border-radius: 5px;
-//           font-size: 14px;
-//         }
-//       }
-//     }
-
-//     .housing-right {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-end;
-//       gap: 5px;
-
-//       .housing-host {
-//         display: flex;
-//         align-items: center;
-//         gap: 10px;
-
-//         .host-picture {
-//           width: 40px; // plus petit
-//           height: 40px;
-//           border-radius: 50%;
-//           object-fit: cover;
-//         }
-
-//         .host-name {
-//           font-weight: bold;
-//           font-size: 16px;
-//         }
-//       }
-
-//       // .housing-rating {
-//       //   display: flex;
-//       //   gap: 5px;
-//       //   margin-top: 5px;
-
-//       //   .star {
-//       //     color: #e3e3e3;
-//       //     font-size: 20px;
-
-//       //     &.filled {
-//       //       color: #ff6060;
-//       //     }
-//       //   }
-//       // }
-//       .housing-rating {
-//         display: flex;
-//         gap: 8px;
-//       }
-
-//       .star {
-//         font-size: 24px;
-//         color: #e3e3e3;
-//       }
-
-//       .star.filled {
-//         color: #ff6060;
-//       }
-//     }
-//   }
-
-//   .housing-collapses {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 30px;
-//     gap: 20px;
-
-//     .collapse {
-//       flex: 1;
-//       margin-bottom: 0; // plus besoin d'espace vertical entre eux
-//     }
-//   }
-
-//   // Responsive
-//   @media (max-width: 768px) {
-//     .housing-header {
-//       flex-direction: column;
-
-//       .housing-right {
-//         align-items: flex-start;
-//         margin-top: 15px;
-//       }
-//     }
-
-//     .housing-collapses {
-//       flex-direction: column;
-//     }
-//   }
-// }
-
 .housing {
   width: 90%;
   margin: 20px auto;
@@ -140,13 +15,14 @@
 
       .housing-title {
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 500; /* <--- Medium */
         margin-bottom: 5px;
+        color: #ff6060;
       }
 
       .housing-location {
         font-size: 16px;
-        color: #ff6060;
+
         margin-bottom: 10px;
       }
 
@@ -184,7 +60,6 @@
         }
 
         .host-name {
-          font-weight: bold;
           font-size: 16px;
         }
       }
@@ -217,48 +92,6 @@
     }
   }
 }
-
-// //   // Responsive
-// //   @media (max-width: 768px) {
-// //     .housing-header {
-// //       flex-direction: column;
-
-// //       .housing-right {
-// //         align-items: flex-start;
-// //         margin-top: 15px;
-// //       }
-// //     }
-
-// //     .housing-collapses {
-// //       flex-direction: column;
-// //     }
-// //   }
-// // }
-//
-// Responsive
-// @media (max-width: 768px) {
-//   .housing-header {
-//     flex-direction: column;
-
-//     .housing-info {
-//       margin-right: 0;
-//       margin-bottom: 15px;
-//     }
-
-//     .housing-right {
-//       display: flex !important; // s'assure que c'est bien un flex
-//       flex-direction: row !important;
-//       justify-content: space-between !important;
-//       align-items: center !important;
-//       width: 100%;
-//       margin-bottom: 15px;
-//     }
-//   }
-
-//   .housing-collapses {
-//     flex-direction: column;
-//   }
-// }
 
 // Responsive mobile
 @media (max-width: 768px) {

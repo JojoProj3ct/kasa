@@ -26,7 +26,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     z-index: 1;
@@ -36,7 +36,8 @@
 /* 📱 MOBILE */
 @media (max-width: 768px) {
   .banner {
-    height: 110px;
+    height: 130px;
+    width: 100%;
 
     .banner-text {
       font-size: 20px;

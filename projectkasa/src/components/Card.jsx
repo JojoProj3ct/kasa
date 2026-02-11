@@ -16,10 +16,12 @@ import "./Card.scss";
 
 function Card({ id, title, cover }) {
   return (
-    <Link to={`/housing/${id}`} className="card">
-      <img src={cover} alt={title} />
-      <h2>{title}</h2>
-    </Link>
+    <article>
+      <Link to={`/housing/${id}`} className="card">
+        <img src={cover} alt={title} />
+        <h2>{title}</h2>
+      </Link>
+    </article>
   );
 }
 
