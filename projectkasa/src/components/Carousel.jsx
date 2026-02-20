@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./Carousel.scss";
 
+// Import des images de flèche
+import arrowLeft from "../assets/vector-gauche.png";
+import arrowRight from "../assets/vector-droite.png";
+
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
   const length = images.length;
@@ -13,8 +17,9 @@ function Carousel({ images }) {
   return (
     <div className="carousel">
       <button className="carousel-arrow left" onClick={prevSlide}>
-        &#10094;
+        <img src={arrowLeft} alt="flèche gauche" />
       </button>
+
       <div className="carousel-image-container">
         <img
           src={images[current]}
@@ -22,9 +27,11 @@ function Carousel({ images }) {
           className="carousel-image"
         />
       </div>
+
       <button className="carousel-arrow right" onClick={nextSlide}>
-        &#10095;
+        <img src={arrowRight} alt="flèche droite" />
       </button>
+
       <div className="carousel-counter">
         {current + 1}/{length}
       </div>

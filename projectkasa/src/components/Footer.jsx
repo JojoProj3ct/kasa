@@ -1,4 +1,4 @@
-import logo from "../assets/Kasa.png";
+import logo from "../assets/LOGO-kasa-footer.png";
 import "./Footer.scss";
 
 function Footer() {

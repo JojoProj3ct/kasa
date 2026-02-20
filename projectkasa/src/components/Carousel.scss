@@ -37,6 +37,11 @@
       right: 10px;
     }
   }
+  .carousel-arrow img {
+    width: 50px; // adapte selon ton design
+    height: 50px;
+    object-fit: contain;
+  }
 
   .carousel-counter {
     position: absolute;

@@ -1,29 +1,3 @@
-// import Banner from "../components/Banner";
-// import banner1 from "../assets/banner1.jpg";
-
-// import Card from "../components/Card";
-// import logements from "../data/logements.json";
-// import "./Home.scss";
-
-// function Home() {
-//   return (
-//     <>
-//       <Banner image={banner1} text="Chez vous, partout et ailleurs" />
-
-//       <div className="cards-container">
-//         {data.map((logement) => (
-//           <Card
-//             key={logement.id}
-//             id={logement.id}
-//             title={logement.title}
-//             cover={logement.cover}
-//           />
-//         ))}
-//       </div>
-//     </>
-//   );
-// }
-
 // export default Home;
 
 import Banner from "../components/Banner";
