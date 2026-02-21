@@ -6,16 +6,20 @@ import Collapse from "../components/Collapse";
 import logements from "../data/logements.json";
 import "./Housing.scss";
 import Rating from "../components/Rating";
+// Déclaration du composant Housing
 function Housing() {
+  // Récupération de l'ID du logement depuis l'URL
   const { id } = useParams();
+
+  // Recherche du logement correspondant à l'ID
   const logement = logements.find((item) => item.id === id);
 
-  // Redirection si le logement n'existe pas
+  // Si le logement n'existe pas → redirection vers la page 404
   if (!logement) {
     return <Navigate to="/404" replace />;
   }
 
-  // Conversion de la note (string -> number)
+  // Conversion de la note du logement en nombre (elle est stockée en string dans le JSON)
   const rating = Number(logement.rating);
 
   return (
